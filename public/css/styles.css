@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    border: 1px solid black;
+    position:fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 30vh;
+}
+
+.weather-app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header-location {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.header-temperature {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.description {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description .description-des{
+    text-transform: capitalize;
+    margin: .5rem;
+}

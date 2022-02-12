@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bc93937063.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Weather Application</title>
+  </head>
+  <body>
+    <div class="weather-app-container">
+      <section class="header">
+        <div class="header-location" data-location><%=location%></div>
+        <div class="header-temperature" data-temperature><%=temp%>&deg;C</div>
+      </section>
+      <section class="description">
+        <div class="description-icon">
+          <img
+            id="weather-img"
+            src="http://openweathermap.org/img/w/<%=icon%>.png"
+          />
+        </div>
+        <div class="description-des"><%=des%></div>
+        <div class="description-humidity">Humidity:<%=humidity%></div>
+      </section>
+      <section class="location-search">
+        <form action="/" method="POST">
+          <input
+            type="text"
+            name="location"
+            class="location"
+            placeholder="Enter a Location"
+          />
+          <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
